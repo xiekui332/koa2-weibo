@@ -7,3 +7,5 @@
 # cd [name]
 
 # npm i
+
+# npm i cross-env -D
