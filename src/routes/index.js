@@ -4,18 +4,17 @@ router.get('/', async (ctx, next) => {
   await ctx.render('index', {
     title: 'Hello Koa 2!',
     isMe: true,
-    blogList:[
-      {
-        id:1,
-        title:"a"
+    blogList: [{
+        id: 1,
+        title: 'a'
       },
       {
-        id:2,
-        title:"b"
+        id: 2,
+        title: 'b'
       },
       {
-        id:3,
-        title:"c"
+        id: 3,
+        title: 'c'
       }
     ]
   })
@@ -28,7 +27,7 @@ router.get('/string', async (ctx, next) => {
 router.get('/json', async (ctx, next) => {
   // const session = ctx.session
   // if(session.viewNum == null) {
-	//   session.viewNum = 0
+  //   session.viewNum = 0
   // }
 
   // session.viewNum ++
@@ -40,7 +39,3 @@ router.get('/json', async (ctx, next) => {
 })
 
 module.exports = router
-
-
-
-
